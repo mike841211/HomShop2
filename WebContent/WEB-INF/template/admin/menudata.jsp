@@ -129,9 +129,9 @@
 	<% group = "group7"; %>
 	{ pid: "", id: "<%= group %>", text: "系统管理", iconCls: "icon-add"},
 		<% if(isAuthorized("ADMIN")){%>
-		{ pid: "<%= group %>", id: "admin", text: "商家管理", iconCls: "icon-node", url: "merchant/list.htm" },<%}%>
+		{ pid: "<%= group %>", id: "admin", text: "商家管理", iconCls: "icon-node", url: "shop/list.htm" },<%}%>
 		<% if(isAuthorized("ADMIN")){%>
-		{ pid: "<%= group %>", id: "admin", text: "账号管理", iconCls: "icon-node", url: "admin/list.htm" },<%}%>
+		{ pid: "<%= group %>", id: "admin", text: "账号管理", iconCls: "icon-node", url: "shop/list.htm" },<%}%>
 		
 		<% if(isAuthorized("ACTIONLOG")){%>
 		{ pid: "<%= group %>", id: "actionlog", text: "操作日志", iconCls: "icon-node", url: "actionlog/list.htm" },<%}%>
