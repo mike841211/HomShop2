@@ -114,7 +114,7 @@
 	<%}%>
 	<%// if(isAuthorized("MEMBER","ADMIN","ROLE","ACTIONLOG","CACHE","CONFIG")){%>
 	<% group = "group6"; %>
-	{ pid: "", id: "<%= group %>", text: "帐户管理", iconCls: "icon-add"},
+	{ pid: "", id: "<%= group %>", text: "配置管理", iconCls: "icon-add"},
 		<% if(isAuthorized("ADMIN")){%>
 		{ pid: "<%= group %>", id: "admin", text: "账号管理", iconCls: "icon-node", url: "admin/list.htm" },<%}%>
 		<% if(isAuthorized("ROLE")){%>
@@ -132,8 +132,7 @@
 		{ pid: "<%= group %>", id: "admin", text: "商家管理", iconCls: "icon-node", url: "merchant/list.htm" },<%}%>
 		<% if(isAuthorized("ADMIN")){%>
 		{ pid: "<%= group %>", id: "admin", text: "账号管理", iconCls: "icon-node", url: "admin/list.htm" },<%}%>
-		<% if(isAuthorized("ROLE")){%>
-		{ pid: "<%= group %>", id: "role", text: "角色管理", iconCls: "icon-node", url: "role/list.htm" },<%}%>
+		
 		<% if(isAuthorized("ACTIONLOG")){%>
 		{ pid: "<%= group %>", id: "actionlog", text: "操作日志", iconCls: "icon-node", url: "actionlog/list.htm" },<%}%>
 		<% if(isAuthorized("CACHE")){%>
