@@ -1,0 +1,12 @@
+package com.homlin.module.#module#.dao.impl;
+
+import org.springframework.stereotype.Repository;
+
+import com.homlin.app.dao.impl.BaseDaoImpl;
+import com.homlin.module.#module#.dao.#clazz#Dao;
+import com.homlin.module.#module#.model.#clazz#;
+
+@Repository
+public class #clazz#DaoImpl extends BaseDaoImpl<#clazz#, String> implements #clazz#Dao {
+
+}

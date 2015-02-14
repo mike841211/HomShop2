@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>微信二维码</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style type="text/css">
+	body {margin:0;}
+	img {margin:5px;}
+</style>
+</head>
+
+<body>
+<input type="text" id="qrcodesrc" size="90">
+样式<input type="text" id="qrcodenum1" value="1" size="1"> - <input type="text" id="qrcodenum2" value="20" size="1">
+大小<select id="pixsize">
+	<option value="1">1倍</option>
+	<option value="2">2倍</option>
+	<option value="3">3倍</option>
+	<option value="4">4倍</option>
+	<option value="5" selected>5倍</option>
+	<option value="6">6倍</option>
+	<option value="7">7倍</option>
+	<option value="8">8倍</option>
+	<option value="9">9倍</option>
+	<option value="10">10倍</option>
+</select>
+<input type="button" value="获取二维码" onclick="getqrcode()">
+<div id="imgs"></div>
+<script language="javascript">
+	function getqrcode(){
+		var qrcodesrc = document.getElementById('qrcodesrc').value;
+		if (qrcodesrc==''){return;};
+		var args = qrcodesrc.split('?')[1].split('&');
+		var argMap = {};
+		for (var i=0; i<args.length; i++){
+			var p = args[i].split('=');
+			argMap[p[0]] = p[1];
+		}
+		var pixsize = document.getElementById('pixsize').value*43;
+		var basesrc = 'https://mp.weixin.qq.com/misc/getqrcode?fakeid='+argMap['fakeid']+'&token='+argMap['token']+'&pixsize='+pixsize;
+		var qrcodenum1 = document.getElementById('qrcodenum1').value;
+		var qrcodenum2 = document.getElementById('qrcodenum2').value;
+		var imgs = [];
+		for (var i=qrcodenum1; i<=qrcodenum2; i++){
+			var src = basesrc+'&style='+i;
+			imgs.push('<a target="_blank" class="verifyInfo" title="点击下载" href="'+src+'&action=download"><img src="'+src+'"/></a>');
+		}
+		document.getElementById('imgs').innerHTML = imgs.join('');
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.tabs-outter {padding: 10px 10px 0;}
+.tabs {display:table; width: 100%;}
+.tabs a {
+  display: table-cell;
+  color: #333;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-left: 0;
+  line-height: 36px;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ddd)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #ddd); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #ffffff, #ddd); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #ffffff, #ddd); /* IE10 */
+  background-image:      -o-linear-gradient(top, #ffffff, #ddd); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #ffffff, #ddd);
+}
+.tabs a:first-child {border-radius: 5px 0 0 5px;border: 1px solid #ccc;}
+.tabs a:last-child {border-radius: 0 5px 5px 0;}
+.tabs a:only-child {border-radius: 5px 5px 5px 5px;}
+.tabs a.active {
+  color: #fff;
+  background: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C50202), to(#FC5353)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #C50202, #FC5353); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #C50202, #FC5353); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #C50202, #FC5353); /* IE10 */
+  background-image:      -o-linear-gradient(top, #C50202, #FC5353); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #C50202, #FC5353);
+}
+.tabs .btn-filter-a {width:40px;}
+
+.swiper-container {
+	min-height:477px;
+}
+
+.loader {
+  position: fixed;
+  left: 5%;
+  top: -100px;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+  background: rgba(0,0,0,0.618);
+  border-radius: 5px;
+}
+.loader.visible {top: 30%;opacity: 1;}

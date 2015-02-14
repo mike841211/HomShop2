@@ -1,0 +1,8 @@
+package com.homlin.module.#module#.dao;
+
+import com.homlin.app.dao.BaseDao;
+import com.homlin.module.#module#.model.#clazz#;
+
+public interface #clazz#Dao extends BaseDao<#clazz#, String> {
+
+}

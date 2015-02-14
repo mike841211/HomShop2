@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<!-- 用于Open HQL Editor调试HQL -->
+<hibernate-configuration>
+	<session-factory>
+		<property name="show_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+		<property name="connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+		<property name="connection.url">jdbc:jtds:sqlserver://localhost:1433/HomShop2</property>
+		<property name="connection.username">saa</property>
+		<property name="connection.password">123</property>
+		<!-- <property name="c3p0.min_size">5</property>
+		<property name="c3p0.max_size">20</property>
+		<property name="c3p0.timeout">1800</property>
+		<property name="c3p0.max_statements">50</property> -->
+		<!-- <mapping package="com.homlin.module.sell.model.*" /> -->
+
+
+
+		<!-- shop -->
+		<mapping class="com.homlin.module.shop.model.TbShopActionlog" />
+		<mapping class="com.homlin.module.shop.model.TbShopAdmin" />
+		<mapping class="com.homlin.module.shop.model.TbShopAdvert" />
+		<mapping class="com.homlin.module.shop.model.TbShopArticle" />
+		<mapping class="com.homlin.module.shop.model.TbShopArticleCategory" />
+		<mapping class="com.homlin.module.shop.model.TbShopBrand" />
+		<mapping class="com.homlin.module.shop.model.TbShopCart" />
+		<mapping class="com.homlin.module.shop.model.TbShopCartItem" />
+		<mapping class="com.homlin.module.shop.model.TbShopChinaArea" />
+		<mapping class="com.homlin.module.shop.model.TbShopConfig" />
+		<mapping class="com.homlin.module.shop.model.TbShopDeliveryTemplate" />
+		<mapping class="com.homlin.module.shop.model.TbShopMember" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberDepositLog$Valtype" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberDepositLog" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberGrade" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberReceiver" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberScoreLog$Valtype" />
+		<mapping class="com.homlin.module.shop.model.TbShopMemberScoreLog" />
+		<mapping class="com.homlin.module.shop.model.TbShopNavigation" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrder$OrderStatus" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrder$PaymentMethod" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrder$PaymentStatus" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrder$ShippingStatus" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrder" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrderItem" />
+		<mapping class="com.homlin.module.shop.model.TbShopOrderLog" />
+		<mapping class="com.homlin.module.shop.model.TbShopProduct" />
+		<mapping class="com.homlin.module.shop.model.TbShopProductBaseinfo" />
+		<mapping class="com.homlin.module.shop.model.TbShopProductCategory" />
+		<mapping class="com.homlin.module.shop.model.TbShopRole" />
+		<mapping class="com.homlin.module.shop.model.TbShopShippingMethod" />
+		<mapping class="com.homlin.module.shop.model.TbShopShippingMethodDetail" />
+		<mapping class="com.homlin.module.shop.model.TbShopSku" />
+		<mapping class="com.homlin.module.shop.model.TbShopSkuSpecificationAndValue" />
+		<mapping class="com.homlin.module.shop.model.TbShopSpecification" />
+		<mapping class="com.homlin.module.shop.model.TbShopSpecificationValue" />
+		<mapping class="com.homlin.module.shop.model.TbWxAutoreply" />
+		<mapping class="com.homlin.module.shop.model.TbWxGroup" />
+		<mapping class="com.homlin.module.shop.model.TbWxMenu" />
+		<mapping class="com.homlin.module.shop.model.TbWxMenuMsg" />
+		<mapping class="com.homlin.module.shop.model.TbWxMsg" />
+		<mapping class="com.homlin.module.shop.model.TbWxUser" />
+
+	</session-factory>
+</hibernate-configuration>

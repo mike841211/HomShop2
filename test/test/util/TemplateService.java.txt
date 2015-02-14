@@ -1,0 +1,8 @@
+package com.homlin.module.#module#.service;
+
+import com.homlin.app.service.BaseService;
+import com.homlin.module.#module#.model.#clazz#;
+
+public interface #clazz#Service extends BaseService<#clazz#, String> {
+
+}

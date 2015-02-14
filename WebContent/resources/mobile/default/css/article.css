@@ -1,0 +1,30 @@
+@charset "utf-8";
+article{margin:0 auto;border-right: 1px solid #ccc;border-left: 1px solid #ccc;padding: 10px;min-height: 420px;}
+article header h1{color: #000;font-size: 20px;font-weight: bold;word-break: normal;word-wrap: break-word;}
+article header span{color: #8C8C8C;font-size: 11px;margin: 0;}
+article section{margin-top: 10px;}
+article section .cover{text-align: center;margin-bottom: 10px;}
+article section .summary{margin-bottom: 10px;border:1px solid #efefef;color:#aaa;padding:15px 10px;}
+article section .content{color:#666;min-height: 250px;}
+article footer{}
+
+body{padding-bottom:46px;}
+.fixed_bottom{position: fixed;bottom:0;z-index:99;text-align:center;border-top: 1px solid #B4B4B4;max-width:640px;}
+.fixed_bottom .tbl-cell{border: 1px solid #F5F5F5;border-bottom: none;position:relative;}
+.fixed_bottom .p33{width:33%;}
+.fixed_bottom .p34{width:34%;}
+.fixed_bottom a{display:block;height:44px;line-height:44px;color:#414141;text-shadow: #E5E5E5 0 1px 0;background: -webkit-gradient(linear, 0 0, 0 100%, from(#E7E7E7), to(#BBB));}
+.fixed_bottom .tbl-cell:nth-child(2){border-left:1px solid #B4B4B4;border-right:1px solid #B4B4B4;}
+
+.subcate {position:absolute;bottom:55px;left:-1px;background:#E7E7E7;border-radius: 5px;border: 1px solid #CCC;width:100%;visibility: hidden;opacity:0;-webkit-transition-duration:.5s;-moz-transition-duration:.5s;-ms-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s;}
+.subcate.active {visibility: visible;opacity:1;}
+.subcate ul{padding: 0 5px;margin-bottom: -20px;}
+.subcate li{background:url(hsplit.png) center bottom no-repeat;background-size: 100% 2px;}
+.subcate li:last-child{background:none;}
+.subcate a{height:auto;line-height:44px;text-shadow: #FFF 0 1px 0;background: none;}
+.subcate .arr{width: 10px;height: 10px;background: #E7E7E7;display: inline-block;-webkit-transform: rotate(45deg);position: relative;bottom: -11px;border-right: 1px solid #CCC;border-bottom: 1px solid #CCC;}
+
+.related-list dt{border-bottom: 1px solid #CCC;line-height: 34px;height: 34px;margin-bottom:5px;}
+.related-list dt h3{display:inline-block;border-bottom: 1px solid #C00;padding: 0 12px 0 10px;}
+.related-list dd{background:url(icon_slid.png) 0 6px no-repeat;background-size: 5% ;padding-left: 18px;}
+.related-list dd a{line-height: 26px;color:#666;}

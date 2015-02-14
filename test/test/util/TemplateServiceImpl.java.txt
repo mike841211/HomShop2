@@ -1,0 +1,19 @@
+package com.homlin.module.#module#.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.homlin.app.service.impl.BaseServiceImpl;
+import com.homlin.module.#module#.dao.#clazz#Dao;
+import com.homlin.module.#module#.model.#clazz#;
+import com.homlin.module.#module#.service.#clazz#Service;
+
+@Service
+public class #clazz#ServiceImpl extends BaseServiceImpl<#clazz#, String> implements #clazz#Service {
+
+	@Autowired
+	public void setBaseDao(#clazz#Dao baseDao) {
+		super.setBaseDao(baseDao);
+	}
+
+}
